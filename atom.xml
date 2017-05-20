@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Cloud Atlas</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-05-16T09:32:42.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>gnahceh</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何发布模块到NPM</title>
+    <link href="http://yoursite.com/%E5%A6%82%E4%BD%95%E5%8F%91%E5%B8%83%E6%A8%A1%E5%9D%97%E5%88%B0NPM.html"/>
+    <id>http://yoursite.com/如何发布模块到NPM.html</id>
+    <published>2016-12-24T13:15:49.000Z</published>
+    <updated>2017-05-16T09:32:42.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;创建项目&quot;&gt;&lt;a href=&quot;#创建项目&quot; class=&quot;headerlink&quot; title=&quot;创建项目&quot;&gt;&lt;/a&gt;创建项目&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;npm init&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="技术摘要" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF%E6%91%98%E8%A6%81/"/>
+    
+    
+      <category term="NPM" scheme="http://yoursite.com/tags/NPM/"/>
+    
+      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>string类型比较</title>
+    <link href="http://yoursite.com/string%E7%B1%BB%E5%9E%8B%E6%AF%94%E8%BE%83.html"/>
+    <id>http://yoursite.com/string类型比较.html</id>
+    <published>2016-11-23T09:13:05.000Z</published>
+    <updated>2017-05-16T09:32:42.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;在JS中经常遇到纯数字和各种各样的字符串进行比较，并且稍有混乱，特别整理一下，理清思路。&quot;&gt;&lt;a href=&quot;#在JS中经常遇到纯数字和各种各样的字符串进行比较，并且稍有混乱，特别整理一下，理清思路。&quot; class=&quot;headerlink&quot; title=&quot;在JS中经常遇到纯数字和各种各样的字符串进行比较，并且稍有混乱，特别整理一下，理清思路。&quot;&gt;&lt;/a&gt;在JS中经常遇到纯数字和各种各样的字符串进行比较，并且稍有混乱，特别整理一下，理清思路。&lt;/h3&gt;&lt;p&gt;在JavaScript中，“&amp;lt;”等运算符会强制把左右两边的操作数都先通过ToNumber()抽象运算转换为Number类型后再做比较，除非两个操作数都是String。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="技术摘要" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF%E6%91%98%E8%A6%81/"/>
+    
+    
+      <category term="JS" scheme="http://yoursite.com/tags/JS/"/>
+    
+      <category term="研究分析" scheme="http://yoursite.com/tags/%E7%A0%94%E7%A9%B6%E5%88%86%E6%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ssh-key生成小记</title>
+    <link href="http://yoursite.com/ssh-key%E7%94%9F%E6%88%90%E5%B0%8F%E8%AE%B0.html"/>
+    <id>http://yoursite.com/ssh-key生成小记.html</id>
+    <published>2016-10-19T01:54:20.000Z</published>
+    <updated>2017-05-19T06:59:17.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;使用环境:关于同一台电脑LInux系统下使用多个SSH key 切换使用(或者多用户使用ssh提交代码)&lt;/p&gt;
+&lt;p&gt;要求,可以创建不同的 PUBLIC KEY ,根据下面步骤设置.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="技术摘要" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF%E6%91%98%E8%A6%81/"/>
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+      <category term="ssh" scheme="http://yoursite.com/tags/ssh/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo NexT搭建博客</title>
+    <link href="http://yoursite.com/hexo-next%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2.html"/>
+    <id>http://yoursite.com/hexo-next搭建博客.html</id>
+    <published>2016-10-12T06:18:43.000Z</published>
+    <updated>2017-05-20T06:32:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;本文将简述如何用Hexo搭建博客，如果有兴趣跟着命令动动手，相信你也可以马上拥有一个自己的博客。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;在 Hexo 中有两份主要的配置文件，其名称都是 _config.yml。 其中，一份位于站点根目录下，主要包含 Hexo 本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;为了描述方便，在下文中，将前者称为 &lt;strong&gt;站点配置文件&lt;/strong&gt;， 后者称为 &lt;strong&gt;主题配置文件&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="技术摘要" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF%E6%91%98%E8%A6%81/"/>
+    
+    
+      <category term="搭建博客" scheme="http://yoursite.com/tags/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+      <category term="NexT" scheme="http://yoursite.com/tags/NexT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/hello-world.html"/>
+    <id>http://yoursite.com/hello-world.html</id>
+    <published>2016-10-10T01:10:16.000Z</published>
+    <updated>2017-05-20T06:30:20.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Sayings&quot;&gt;&lt;a href=&quot;#Sayings&quot; class=&quot;headerlink&quot; title=&quot;Sayings&quot;&gt;&lt;/a&gt;Sayings&lt;/h1&gt;&lt;p&gt;Welcome to &lt;a href=&quot;https://greatmagicianhc.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Cloud Atlas&lt;/a&gt;! This is my first blog post.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="记录" scheme="http://yoursite.com/tags/%E8%AE%B0%E5%BD%95/"/>
+    
+      <category term="第一篇" scheme="http://yoursite.com/tags/%E7%AC%AC%E4%B8%80%E7%AF%87/"/>
+    
+  </entry>
+  
+</feed>
