@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="生活,记录,第一篇," />
+  <meta name="keywords" content="NPM 发布模块" />
 
 
 
@@ -92,17 +92,17 @@
 
 
 
-<meta name="description" content="SayingsWelcome to Cloud Atlas! This is my first blog post.">
-<meta name="keywords" content="生活,记录,第一篇">
+<meta name="description" content="使用npm命令，创建模块，并发布到 npmjs">
+<meta name="keywords" content="NPM 发布模块">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/hello-world.html">
+<meta property="og:title" content="如何发布模块到NPM">
+<meta property="og:url" content="http://yoursite.com/技术摘要/如何发布模块到NPM.html">
 <meta property="og:site_name" content="Cloud Atlas">
-<meta property="og:description" content="SayingsWelcome to Cloud Atlas! This is my first blog post.">
-<meta property="og:updated_time" content="2017-05-20T06:30:20.000Z">
+<meta property="og:description" content="使用npm命令，创建模块，并发布到 npmjs">
+<meta property="og:updated_time" content="2017-05-20T07:24:32.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="SayingsWelcome to Cloud Atlas! This is my first blog post.">
+<meta name="twitter:title" content="如何发布模块到NPM">
+<meta name="twitter:description" content="使用npm命令，创建模块，并发布到 npmjs">
 
 
 
@@ -130,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/hello-world.html"/>
+  <link rel="canonical" href="http://yoursite.com/技术摘要/如何发布模块到NPM.html"/>
 
 
 
 
 
-  <title>Hello World | Cloud Atlas</title>
+  <title>如何发布模块到NPM | Cloud Atlas</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -275,7 +275,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/hello-world.html">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/技术摘要/如何发布模块到NPM.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="gnahceh">
@@ -292,7 +292,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">如何发布模块到NPM</h1>
         
 
         <div class="post-meta">
@@ -304,8 +304,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-10-10T09:10:16+08:00">
-                2016-10-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-24T21:15:49+08:00">
+                2016-12-24
               </time>
             
 
@@ -327,8 +327,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/随笔/" itemprop="url" rel="index">
-                    <span itemprop="name">随笔</span>
+                  <a href="/categories/技术摘要/" itemprop="url" rel="index">
+                    <span itemprop="name">技术摘要</span>
                   </a>
                 </span>
 
@@ -344,7 +344,7 @@
 
           
           
-             <span id="/hello-world.html" class="leancloud_visitors" data-flag-title="Hello World">
+             <span id="/技术摘要/如何发布模块到NPM.html" class="leancloud_visitors" data-flag-title="如何发布模块到NPM">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -369,7 +369,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  285
+                  497
                 </span>
               
 
@@ -385,12 +385,16 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
           
 
+          
+              <div class="post-description">
+                  使用npm命令，创建模块，并发布到 npmjs
+              </div>
           
 
         </div>
@@ -403,12 +407,33 @@
       
 
       
-        <h1 id="Sayings"><a href="#Sayings" class="headerlink" title="Sayings"></a>Sayings</h1><p>Welcome to <a href="https://greatmagicianhc.github.io/" target="_blank" rel="external">Cloud Atlas</a>! This is my first blog post.</p>
+        <h2 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm init</div></pre></td></tr></table></figure>
 <a id="more"></a>
-<p> 一开始想到搭建博客，就想到用”Hexo”或者”Jekyll”。查看一些资料过后，也没有很确定到底使用哪个，对于二者优劣之争，好像都很有道理。后来，纯粹感觉Hexo的NexT主题不错，便选择了使用Hexo来搭建我的第一个静态博客。</p>
-<p> 一路弄下来，遇到问题都不是很大，几条命令，就生成了你想要的。但是，关键在于折腾(生命不息、作死不止)，比如折腾些配置，折腾些三方服务… 幸运的是把想要的东西都折腾上去了。</p>
-<p> 话说回来，博客嘛，我觉得最重要的是坚持，坚持下来，经常写点东西，给自己看也好，给别人看也好(觉得有用记得打赏^^)，像士兵突击里面说到的：”做点有意义的事情”。过了一段时间，或许会惊喜的发现”原来我也能写出些不错的东西”。</p>
-<p> 好了，也不多感慨什么了，路漫漫才刚启程，加油，我会很优秀，很强大！</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">name: (my-npm)</div><div class="line">version: (1.0.0)</div><div class="line">description: 0.0.1</div><div class="line">entry point: (index.js)</div><div class="line">test command:</div><div class="line">git repository:</div><div class="line">keywords:</div><div class="line">author: Awe</div><div class="line">license: (ISC) MIT</div><div class="line">About to write to F:\github\my-npm\package.json:</div><div class="line"></div><div class="line">&#123;</div><div class="line">  &quot;name&quot;: &quot;my-npm&quot;,</div><div class="line">  &quot;version&quot;: &quot;1.0.0&quot;,</div><div class="line">  &quot;description&quot;: &quot;0.0.1&quot;,</div><div class="line">  &quot;main&quot;: &quot;index.js&quot;,</div><div class="line">  &quot;scripts&quot;: &#123;</div><div class="line">    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</div><div class="line">  &#125;,</div><div class="line">  &quot;author&quot;: &quot;Awe&quot;,</div><div class="line">  &quot;license&quot;: &quot;MIT&quot;</div><div class="line">&#125;</div><div class="line">Is this ok? (yes)</div></pre></td></tr></table></figure>
+<p>接着就依次填写, 不想填写的话也可以一路Enter</p>
+<h3 id="name"><a href="#name" class="headerlink" title="name:"></a>name:</h3><p>模块名，之后发布之后就可以让用户npm install xxxx来引用你的开源模块了</p>
+<h3 id="version"><a href="#version" class="headerlink" title="version:"></a>version:</h3><p>版本号，语义版本号分为X.Y.Z三位，分别代表主版本号、次版本号和补丁版本号。当代码变更时，版本号按以下原则更新。</p>
+<h3 id="description"><a href="#description" class="headerlink" title="description:"></a>description:</h3><p>简单介绍自己的模块</p>
+<h3 id="main"><a href="#main" class="headerlink" title="main:"></a>main:</h3><p>入口文件，必要，当通过require(‘xxx’)时，是读取main里声明的文件</p>
+<h3 id="test-command"><a href="#test-command" class="headerlink" title="test command:"></a>test command:</h3><p>测试命令</p>
+<h3 id="git-repository"><a href="#git-repository" class="headerlink" title="git repository:"></a>git repository:</h3><p>git仓库地址</p>
+<h3 id="keywords"><a href="#keywords" class="headerlink" title="keywords:"></a>keywords:</h3><p>关键词，可以通过npm搜索你天蝎的关键词找到你的模块</p>
+<h3 id="author"><a href="#author" class="headerlink" title="author:"></a>author:</h3><p>作者信息，可以之后编辑更详细一些</p>
+<h3 id="license-ISC"><a href="#license-ISC" class="headerlink" title="license(ISC);"></a>license(ISC);</h3><p><a href="https://zh.wikipedia.org/wiki/ISC%E8%A8%B1%E5%8F%AF%E8%AD%89" target="_blank" rel="external">代码授权许可证</a></p>
+<p>以上放心可以大胆写，因为之后反正要改。</p>
+<h2 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h2><p>初始化项目完成，可以看到目录中出现了一个叫 package.json 的文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  &quot;name&quot;: &quot;my-npm&quot;,</div><div class="line">  &quot;version&quot;: &quot;1.0.0&quot;,</div><div class="line">  &quot;description&quot;: &quot;0.0.1&quot;,</div><div class="line">  &quot;main&quot;: &quot;index.js&quot;,</div><div class="line">  &quot;scripts&quot;: &#123;</div><div class="line">    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</div><div class="line">  &#125;,</div><div class="line">  &quot;author&quot;: &quot;Awe&quot;,</div><div class="line">  &quot;license&quot;: &quot;MIT&quot;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>更多配置信息可以参考一下vue的package.json的<a href="https://github.com/vuejs/vue/blob/dev/package.json" target="_blank" rel="external">https://github.com/vuejs/vue/blob/dev/package.json</a></p>
+<h2 id="发布模块"><a href="#发布模块" class="headerlink" title="发布模块"></a>发布模块</h2><ol>
+<li>在npm<a href="https://www.npmjs.com/signup" target="_blank" rel="external">注册用户</a></li>
+<li><p>在本地登录自己的npm账号</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm login</div></pre></td></tr></table></figure>
+</li>
+<li><p>发布模块</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm publish</div><div class="line">//返回下面的信息就是发布成功了</div><div class="line">+ qarticles@0.3.4</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="附"><a href="#附" class="headerlink" title="附"></a>附</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">npm update &lt;package&gt;</div><div class="line">//可以把当前目录下node_modules子目录里边的对应模块更新至最新版本。</div><div class="line"></div><div class="line">npm cache clear</div><div class="line">//可以清空NPM本地缓存，用于对付使用相同版本号发布新版本代码的人。</div><div class="line"></div><div class="line">npm unpublish &lt;package&gt;@&lt;version&gt;</div><div class="line"></div><div class="line">//可以撤销发布自己发布过的某个版本代码。</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -459,11 +484,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/生活/" rel="tag"># 生活</a>
+            <a href="/tags/NPM/" rel="tag"># NPM</a>
           
-            <a href="/tags/记录/" rel="tag"># 记录</a>
-          
-            <a href="/tags/第一篇/" rel="tag"># 第一篇</a>
+            <a href="/tags/学习/" rel="tag"># 学习</a>
           
         </div>
       
@@ -476,15 +499,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/技术摘要/string类型比较.html" rel="next" title="string类型比较">
+                <i class="fa fa-chevron-left"></i> string类型比较
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/hexo-next搭建博客.html" rel="prev" title="Hexo NexT搭建博客">
-                Hexo NexT搭建博客 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -578,7 +601,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -599,7 +622,7 @@
           
             
               <span class="links-of-author-item">
-                <a href="https://github.com/GreatMagicianHC" target="_blank" title="GitHub">
+                <a rel="external nofollow" href="https://github.com/GreatMagicianHC" target="_blank" title="GitHub">
                   
                     <i class="fa fa-fw fa-github"></i>
                   
@@ -608,7 +631,7 @@
               </span>
             
               <span class="links-of-author-item">
-                <a href="http://weibo.com/xiaojietimes" target="_blank" title="Weibo">
+                <a rel="external nofollow" href="http://weibo.com/xiaojietimes" target="_blank" title="Weibo">
                   
                     <i class="fa fa-fw fa-weibo"></i>
                   
@@ -617,7 +640,7 @@
               </span>
             
               <span class="links-of-author-item">
-                <a href="https://www.zhihu.com/people/he-xiao-jie-70-43" target="_blank" title="Zhihu">
+                <a rel="external nofollow" href="https://www.zhihu.com/people/he-xiao-jie-70-43" target="_blank" title="Zhihu">
                   
                     <i class="fa fa-fw fa-zhihu"></i>
                   
@@ -649,7 +672,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Sayings"><span class="nav-number">1.</span> <span class="nav-text">Sayings</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建项目"><span class="nav-number">1.</span> <span class="nav-text">创建项目</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#name"><span class="nav-number">1.1.</span> <span class="nav-text">name:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#version"><span class="nav-number">1.2.</span> <span class="nav-text">version:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#description"><span class="nav-number">1.3.</span> <span class="nav-text">description:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#main"><span class="nav-number">1.4.</span> <span class="nav-text">main:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#test-command"><span class="nav-number">1.5.</span> <span class="nav-text">test command:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-repository"><span class="nav-number">1.6.</span> <span class="nav-text">git repository:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#keywords"><span class="nav-number">1.7.</span> <span class="nav-text">keywords:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#author"><span class="nav-number">1.8.</span> <span class="nav-text">author:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#license-ISC"><span class="nav-number">1.9.</span> <span class="nav-text">license(ISC);</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#package-json"><span class="nav-number">2.</span> <span class="nav-text">package.json</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#发布模块"><span class="nav-number">3.</span> <span class="nav-text">发布模块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#附"><span class="nav-number">4.</span> <span class="nav-text">附</span></a></li></ol></div>
             
 
           </div>
@@ -681,12 +704,12 @@
 
 
 <div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+  由 <a rel="external nofollow" class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
 </div>
 
 <div class="theme-info">
   主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+  <a rel="external nofollow" class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Mist
   </a>
 </div>
