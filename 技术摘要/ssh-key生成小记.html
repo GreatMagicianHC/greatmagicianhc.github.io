@@ -92,17 +92,17 @@
 
 
 
-<meta name="description" content="同一台电脑系统下使用多个SSH key">
+<meta name="description" content="同一台电脑系统下 多个SSH key">
 <meta name="keywords" content="git ssh">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ssh-key生成小记">
 <meta property="og:url" content="http://yoursite.com/技术摘要/ssh-key生成小记.html">
 <meta property="og:site_name" content="Cloud Atlas">
-<meta property="og:description" content="同一台电脑系统下使用多个SSH key">
-<meta property="og:updated_time" content="2017-05-20T07:24:32.000Z">
+<meta property="og:description" content="同一台电脑系统下 多个SSH key">
+<meta property="og:updated_time" content="2017-05-22T14:27:39.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ssh-key生成小记">
-<meta name="twitter:description" content="同一台电脑系统下使用多个SSH key">
+<meta name="twitter:description" content="同一台电脑系统下 多个SSH key">
 
 
 
@@ -369,7 +369,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  528
+                  701
                 </span>
               
 
@@ -385,7 +385,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  2
+                  3
                 </span>
               
             </div>
@@ -393,7 +393,7 @@
 
           
               <div class="post-description">
-                  同一台电脑系统下使用多个SSH key
+                  同一台电脑系统下 多个SSH key
               </div>
           
 
@@ -407,27 +407,28 @@
       
 
       
-        <p>使用环境:关于同一台电脑LInux系统下使用多个SSH key 切换使用(或者多用户使用ssh提交代码)</p>
-<p>要求,可以创建不同的 PUBLIC KEY ,根据下面步骤设置.</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文主要讲解在同一台电脑系统下使用多个SSH key，切换使用多用户提交代码。</p>
+<p>创建了不同的 <strong>PUBLIC KEY</strong>，我们就可以在自己电脑上用不同git账号提交自己的代码啦。</p>
 <a id="more"></a>
-<p>(1)比如有aaa,bbb,ccc 三个帐号需要生成不同的 PUBLIC KEY</p>
-<p>$ ssh-keygen -t rsa<br>Generating public/private rsa key pair.<br>Enter file in which to save the key (/root/.ssh/id_rsa):/root/.ssh/id_rsa_aaa<br>Enter passphrase (empty for no passphrase):<br>Enter same passphrase again:<br>Your identification has been saved in /root/.ssh/id_rsa_aaa.<br>Your public key has been saved in /root/.ssh/id_rsa_aaa.pub.<br>The key fingerprint is:<br>9b:92:f6:1f:d2:72:bd:72:19:45:42:5f:e4:65:33:64 root@AY140122145815620396Z<br>The key’s randomart image is:</p>
+<h2 id="生成-KEY"><a href="#生成-KEY" class="headerlink" title="生成 KEY"></a>生成 KEY</h2><h3 id="1-比如有我们有-aaa-bbb-ccc-三个帐号需要生成不同的-PUBLIC-KEY。首先我们先来生成aaa账号的key："><a href="#1-比如有我们有-aaa-bbb-ccc-三个帐号需要生成不同的-PUBLIC-KEY。首先我们先来生成aaa账号的key：" class="headerlink" title="(1)比如有我们有 aaa,bbb,ccc 三个帐号需要生成不同的 PUBLIC KEY。首先我们先来生成aaa账号的key："></a>(1)比如有我们有 aaa,bbb,ccc 三个帐号需要生成不同的 PUBLIC KEY。首先我们先来生成aaa账号的key：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa</div><div class="line">Generating public/private rsa key pair.</div><div class="line">Enter file in which to save the key (/root/.ssh/id_rsa):/root/.ssh/id_rsa_aaa</div><div class="line">Enter passphrase (empty for no passphrase):</div><div class="line">Enter same passphrase again:</div><div class="line">Your identification has been saved in /root/.ssh/id_rsa_aaa.</div><div class="line">Your public key has been saved in /root/.ssh/id_rsa_aaa.pub.</div><div class="line">The key fingerprint is:</div><div class="line">9b:92:f6:1f:d2:72:bd:72:19:45:42:5f:e4:65:33:64 root@AY140122145815620396Z</div><div class="line">The key&apos;s randomart image is:</div></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">+--[ RSA 2048]----+</div><div class="line">|           .. .E=|</div><div class="line">|            ..o++|</div><div class="line">|             o. .|</div><div class="line">|              .  |</div><div class="line">|        S    .   |</div><div class="line">|       . + ..    |</div><div class="line">|      + = + .o   |</div><div class="line">|     . o +..o.   |</div><div class="line">|        ...o.    |</div><div class="line">+-----------------+</div></pre></td></tr></table></figure>
-<p> 进过上面的shell 我们在 /root/.ssh/ 目录下创建 id_rsa_aaa  私钥 和 id_rsa_aaa.pub 公钥</p>
-<p>注意这里</p>
-<p>Enter file in which to save the key (/root/.ssh/id_rsa):/root/.ssh/id_rsa_aaa  #设置路径,如果不设置默认生成 id_rsa  和  id_rsa.pub<br>(2)按照上面的步骤逐个生成 bbb 和 ccc 对应的公钥和私钥 ……..</p>
-<p>(3)查看系统ssh-key代理,执行如下命令</p>
-<p>$ ssh-add -l<br>Could not open a connection to your authentication agent.<br>如果发现上面的提示,说明系统代理里没有任何key,执行如下操作<br>exec ssh-agent bash<br>如果系统已经有ssh-key 代理 ,执行下面的命令可以删除</p>
-<p>$ ssh-add -D</p>
-<p>(4)把 .ssh 目录下的3个私钥添加的 ssh-agent</p>
-<p>$ ssh-add ~/.ssh/id_rsa_aaa<br>$ ssh-add ~/.ssh/id_rsa_bbb<br>$ ssh-add ~/.ssh/id_rsa_ccc<br>依次执行上面三条shell 把三个私钥添加到 ssh-key 代理里面</p>
-<p>(5)打开github 或者 开源中国 ssh 管理页面把 对应的公钥提交保存到代码管理服务器 (.pub 结尾)</p>
-<p>(6)在 .ssh 目录创建 config 配置文件</p>
-<p>nano ~/.ssh/config<br>输入如下配置信息</p>
-<p>#aaa  (github 配置)<br>Host aaa<br>    HostName github.com<br>    User git<br>    IdentityFile ~/.ssh/id_rsa_aaa</p>
-<p>#bbb  (开源中国 配置)<br>Host bbb<br>    HostName git.oschina.net<br>    User git<br>    IdentityFile ~/.ssh/id_rsa_bbb</p>
-<p>#ccc<br>……..<br>(6)记住上面一步 Host 里设置的别名,开始克隆项目,以开源中国为例</p>
-<p>git clone git@git.oschina.net:userName/projectName.git<br>到此为止多个ssh-key 已经可以同时使用.</p>
+<p>通过上面的shell，我们在 /root/.ssh/ 目录下创建 id_rsa_aaa  私钥 和 id_rsa_aaa.pub 公钥。</p>
+<p>注意这里，设置路径，如果不设置，默认生成 id_rsa  和  id_rsa.pub。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Enter file in which to save the key (/root/.ssh/id_rsa):/root/.ssh/id_rsa_aaa</div></pre></td></tr></table></figure>
+<h3 id="2-按照上面的步骤逐个生成-bbb-和-ccc-对应的公钥和私钥"><a href="#2-按照上面的步骤逐个生成-bbb-和-ccc-对应的公钥和私钥" class="headerlink" title="(2)按照上面的步骤逐个生成 bbb 和 ccc 对应的公钥和私钥"></a>(2)按照上面的步骤逐个生成 bbb 和 ccc 对应的公钥和私钥</h3><h3 id="3-查看系统ssh-key代理-执行如下命令"><a href="#3-查看系统ssh-key代理-执行如下命令" class="headerlink" title="(3)查看系统ssh-key代理,执行如下命令"></a>(3)查看系统ssh-key代理,执行如下命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ ssh-add -l</div><div class="line">Could not open a connection to your authentication agent.</div></pre></td></tr></table></figure>
+<p>如果发现上面的提示,说明系统代理里没有任何key,执行如下操作</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">exec ssh-agent bash</div></pre></td></tr></table></figure>
+<p>如果系统已经有ssh-key 代理 ,执行下面的命令可以删除</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-add -D</div></pre></td></tr></table></figure>
+<h3 id="4-把-ssh-目录下的3个私钥添加的-ssh-agent"><a href="#4-把-ssh-目录下的3个私钥添加的-ssh-agent" class="headerlink" title="(4)把 .ssh 目录下的3个私钥添加的 ssh-agent"></a>(4)把 .ssh 目录下的3个私钥添加的 ssh-agent</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ ssh-add ~/.ssh/id_rsa_aaa</div><div class="line">$ ssh-add ~/.ssh/id_rsa_bbb</div><div class="line">$ ssh-add ~/.ssh/id_rsa_ccc</div></pre></td></tr></table></figure>
+<p>依次执行上面三条shell 把三个私钥添加到 ssh-key 代理里面</p>
+<h3 id="5-打开github-或者-开源中国-ssh-管理页面把-对应的公钥提交保存到代码管理服务器-pub-结尾"><a href="#5-打开github-或者-开源中国-ssh-管理页面把-对应的公钥提交保存到代码管理服务器-pub-结尾" class="headerlink" title="(5)打开github 或者 开源中国 ssh 管理页面把 对应的公钥提交保存到代码管理服务器 (.pub 结尾)"></a>(5)打开github 或者 开源中国 ssh 管理页面把 对应的公钥提交保存到代码管理服务器 (.pub 结尾)</h3><h3 id="6-在-ssh-目录创建-config-配置文件"><a href="#6-在-ssh-目录创建-config-配置文件" class="headerlink" title="(6)在 .ssh 目录创建 config 配置文件"></a>(6)在 .ssh 目录创建 config 配置文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nano ~/.ssh/config</div></pre></td></tr></table></figure>
+<p>输入如下配置信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">#aaa  (github 配置)</div><div class="line">Host aaa</div><div class="line">    HostName github.com</div><div class="line">    User git</div><div class="line">    IdentityFile ~/.ssh/id_rsa_aaa</div><div class="line"></div><div class="line">#bbb  (开源中国 配置)</div><div class="line">Host bbb</div><div class="line">    HostName git.oschina.net</div><div class="line">    User git</div><div class="line">    IdentityFile ~/.ssh/id_rsa_bbb</div><div class="line"></div><div class="line">#ccc</div><div class="line">........</div></pre></td></tr></table></figure>
+<h3 id="6-记住上面一步-Host-里设置的别名-开始克隆项目-以开源中国为例"><a href="#6-记住上面一步-Host-里设置的别名-开始克隆项目-以开源中国为例" class="headerlink" title="(6)记住上面一步 Host 里设置的别名,开始克隆项目,以开源中国为例"></a>(6)记住上面一步 Host 里设置的别名,开始克隆项目,以开源中国为例</h3><p>git clone git@git.oschina.net:userName/projectName.git<br>到此为止多个ssh-key 已经可以同时使用.</p>
+<h2 id="Sayings"><a href="#Sayings" class="headerlink" title="Sayings"></a>Sayings</h2><p>遇到ssh key的问题，是因为刚来公司时，需要往gitlab上公司仓库提交代码，而自己又想在github上玩自己的小项目。</p>
+<p>一来二去，发现手动切换账号很笨拙，并且有时候一不小心，就用了github的账号往公司仓库提交代码。</p>
+<p>在看了一些资料后，终于把问题解决了，账号随时切换，方便快捷，于是也就把解决的过程记录了下，下次再遇到就可以快速解决问题了。</p>
 
       
     </div>
@@ -552,8 +553,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpeg"
@@ -651,6 +661,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成-KEY"><span class="nav-number">2.</span> <span class="nav-text">生成 KEY</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-比如有我们有-aaa-bbb-ccc-三个帐号需要生成不同的-PUBLIC-KEY。首先我们先来生成aaa账号的key："><span class="nav-number">2.1.</span> <span class="nav-text">(1)比如有我们有 aaa,bbb,ccc 三个帐号需要生成不同的 PUBLIC KEY。首先我们先来生成aaa账号的key：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-按照上面的步骤逐个生成-bbb-和-ccc-对应的公钥和私钥"><span class="nav-number">2.2.</span> <span class="nav-text">(2)按照上面的步骤逐个生成 bbb 和 ccc 对应的公钥和私钥</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-查看系统ssh-key代理-执行如下命令"><span class="nav-number">2.3.</span> <span class="nav-text">(3)查看系统ssh-key代理,执行如下命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-把-ssh-目录下的3个私钥添加的-ssh-agent"><span class="nav-number">2.4.</span> <span class="nav-text">(4)把 .ssh 目录下的3个私钥添加的 ssh-agent</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-打开github-或者-开源中国-ssh-管理页面把-对应的公钥提交保存到代码管理服务器-pub-结尾"><span class="nav-number">2.5.</span> <span class="nav-text">(5)打开github 或者 开源中国 ssh 管理页面把 对应的公钥提交保存到代码管理服务器 (.pub 结尾)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-在-ssh-目录创建-config-配置文件"><span class="nav-number">2.6.</span> <span class="nav-text">(6)在 .ssh 目录创建 config 配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-记住上面一步-Host-里设置的别名-开始克隆项目-以开源中国为例"><span class="nav-number">2.7.</span> <span class="nav-text">(6)记住上面一步 Host 里设置的别名,开始克隆项目,以开源中国为例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Sayings"><span class="nav-number">3.</span> <span class="nav-text">Sayings</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
