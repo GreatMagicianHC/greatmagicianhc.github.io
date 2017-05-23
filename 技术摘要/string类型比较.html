@@ -92,17 +92,17 @@
 
 
 
-<meta name="description" content="在JS中经常遇到纯数字和各种各样的字符串进行比较，并且稍有混乱，特别整理一下，理清思路。">
+<meta name="description" content="在JS中经常遇到纯数字和各种各样的字符串进行比较，特别整理一下。">
 <meta name="keywords" content="JS string类型">
 <meta property="og:type" content="article">
 <meta property="og:title" content="string类型比较">
 <meta property="og:url" content="http://yoursite.com/技术摘要/string类型比较.html">
 <meta property="og:site_name" content="Cloud Atlas">
-<meta property="og:description" content="在JS中经常遇到纯数字和各种各样的字符串进行比较，并且稍有混乱，特别整理一下，理清思路。">
-<meta property="og:updated_time" content="2017-05-20T07:24:32.000Z">
+<meta property="og:description" content="在JS中经常遇到纯数字和各种各样的字符串进行比较，特别整理一下。">
+<meta property="og:updated_time" content="2017-05-23T02:31:06.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="string类型比较">
-<meta name="twitter:description" content="在JS中经常遇到纯数字和各种各样的字符串进行比较，并且稍有混乱，特别整理一下，理清思路。">
+<meta name="twitter:description" content="在JS中经常遇到纯数字和各种各样的字符串进行比较，特别整理一下。">
 
 
 
@@ -369,7 +369,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  341
+                  423
                 </span>
               
 
@@ -385,7 +385,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -393,7 +393,7 @@
 
           
               <div class="post-description">
-                  在JS中经常遇到纯数字和各种各样的字符串进行比较，并且稍有混乱，特别整理一下，理清思路。
+                  在JS中经常遇到纯数字和各种各样的字符串进行比较，特别整理一下。
               </div>
           
 
@@ -410,6 +410,8 @@
         <h3 id="在JS中经常遇到纯数字和各种各样的字符串进行比较，并且稍有混乱，特别整理一下，理清思路。"><a href="#在JS中经常遇到纯数字和各种各样的字符串进行比较，并且稍有混乱，特别整理一下，理清思路。" class="headerlink" title="在JS中经常遇到纯数字和各种各样的字符串进行比较，并且稍有混乱，特别整理一下，理清思路。"></a>在JS中经常遇到纯数字和各种各样的字符串进行比较，并且稍有混乱，特别整理一下，理清思路。</h3><p>在JavaScript中，“&lt;”等运算符会强制把左右两边的操作数都先通过ToNumber()抽象运算转换为Number类型后再做比较，除非两个操作数都是String。</p>
 <a id="more"></a>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">    function test()&#123;</div><div class="line">        //1)纯数字之间比较</div><div class="line">        //alert(1&lt;3);//true</div><div class="line"></div><div class="line">        //2)数字字符串比较，会将其先转成数字</div><div class="line">        //alert(&quot;1&quot;&lt;&quot;3&quot;);//true</div><div class="line">        //alert(&quot;123&quot;&lt;&quot;123&quot;);//false</div><div class="line"></div><div class="line">        //3)纯字符串比较,先转成ascii码</div><div class="line">        //alert(&quot;a&quot;&lt;&quot;b&quot;);//true</div><div class="line">        //alert(&quot;abc&quot;&lt;&quot;aad&quot;);//false,多纯字母比较，会依次比较ascii码</div><div class="line"></div><div class="line">        //4)汉字比较</div><div class="line">        //alert(&quot;我&quot;.charCodeAt());//25105</div><div class="line">        //alert(&quot;的&quot;.charCodeAt());//30340</div><div class="line">        //alert(&quot;我&quot;&lt;&quot;的&quot;);//true,汉字比较,转成ascii码</div><div class="line"></div><div class="line">        //5)当数字和字符串比较，且字符串为数字。则将数字字符串转为数字</div><div class="line">        //alert(123&lt;&quot;124&quot;);//true,下面一句代码得出124的ascii码为49，所以并不是转成ascii比较</div><div class="line">        //alert(&quot;124&quot;.charCodeAt());//49</div><div class="line"></div><div class="line">        //6)当数字和字符串比较,且字符串为非纯数字时,则将非数字字符串转成数字的时候会转换为NaN,当NaN和数字比较时不论大小都返回false.</div><div class="line">        alert(13&gt;&quot;abc&quot;);//false</div><div class="line">    &#125;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h3 id="Sayings"><a href="#Sayings" class="headerlink" title="Sayings"></a>Sayings</h3><p>遇到string类型比较的问题，是因为在项目中出了一个bug，if(XXX &lt; YYY) 的判断时对时不对。</p>
+<p>后来经过debug，发现是数字和数字字符串比较时出现了问题。查看资料后，索性把其他情况下的比较也都一一列出记录。</p>
 <p>参考文献：<br>ECMAScript 5.1里“&lt;”运算符的规定：<a href="https://es5.github.io/#x11.8.1" target="_blank" rel="external">https://es5.github.io/#x11.8.1</a><br>抽象运算步骤：<a href="https://es5.github.io/#x11.8.5" target="_blank" rel="external">https://es5.github.io/#x11.8.5</a></p>
 
       
@@ -653,7 +655,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#在JS中经常遇到纯数字和各种各样的字符串进行比较，并且稍有混乱，特别整理一下，理清思路。"><span class="nav-number">1.</span> <span class="nav-text">在JS中经常遇到纯数字和各种各样的字符串进行比较，并且稍有混乱，特别整理一下，理清思路。</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#在JS中经常遇到纯数字和各种各样的字符串进行比较，并且稍有混乱，特别整理一下，理清思路。"><span class="nav-number">1.</span> <span class="nav-text">在JS中经常遇到纯数字和各种各样的字符串进行比较，并且稍有混乱，特别整理一下，理清思路。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sayings"><span class="nav-number">2.</span> <span class="nav-text">Sayings</span></a></li></ol></div>
             
 
           </div>
