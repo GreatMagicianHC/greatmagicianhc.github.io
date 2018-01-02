@@ -99,7 +99,7 @@
 <meta property="og:url" content="http://yoursite.com/技术摘要/hexo-next搭建博客.html">
 <meta property="og:site_name" content="Cloud Atlas">
 <meta property="og:description" content="用Hexo搭建博客，NexT主题">
-<meta property="og:updated_time" content="2018-01-02T03:43:24.000Z">
+<meta property="og:updated_time" content="2018-01-02T05:58:49.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo NexT搭建博客">
 <meta name="twitter:description" content="用Hexo搭建博客，NexT主题">
@@ -337,7 +337,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  1,237
+                  1,354
                 </span>
               
 
@@ -422,8 +422,11 @@
 <h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>在 <strong>站点配置文件</strong> 下找到 <strong>deploy</strong> 字段，进行相关配置后，执行命令，将会部署博客。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
 <p>更多信息: <a href="https://hexo.io/zh-cn/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<h1 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h1><p>首先建立一个与你用户名相对应的仓库，仓库名必须为 [your_user_name.github.io] ，固定写法。</p>
+<p>然后在 <strong>站点配置文件</strong> 中，找到 deploy 修改配置，例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"># Deployment</div><div class="line">## Docs: https://hexo.io/docs/deployment.html</div><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: https://github.com/GreatMagicianHC/greatmagicianhc.github.io.git</div><div class="line">  branch: master</div><div class="line">  message: 我的博客</div></pre></td></tr></table></figure></p>
+<p>每次部署的步骤，可以分三步进行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean      // 清理public文件夹</div><div class="line">hexo generate   // 编译生成好静态文件</div><div class="line">hexo deploy     // 部署</div></pre></td></tr></table></figure></p>
 <h1 id="Sayings"><a href="#Sayings" class="headerlink" title="Sayings"></a>Sayings</h1><p>总算完结了文章，耗时将近3小时。这3小时感觉无比充实，时间也过得飞快，认真做一件事的感觉，很好。</p>
-<p>作为第一篇真正有干货的文章，内心还是很激动的，水平有限，欢迎拍砖。(什么？出问题了？命令报错？好吧，那你多喝热水，重启试试呗~)</p>
+<p>作为第一篇真正有干货的文章，内心还是很激动的，水平有限，欢迎赞赏。(什么？出问题了？命令报错？好吧，那你多喝热水，重启试试呗~)</p>
 
       
     </div>
@@ -668,7 +671,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装Hexo"><span class="nav-number">2.</span> <span class="nav-text">安装Hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装NexT"><span class="nav-number">3.</span> <span class="nav-text">安装NexT</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#设置代码高亮主题"><span class="nav-number">3.1.</span> <span class="nav-text">设置代码高亮主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开启打赏功能"><span class="nav-number">3.2.</span> <span class="nav-text">开启打赏功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#订阅微信公众号"><span class="nav-number">3.3.</span> <span class="nav-text">订阅微信公众号</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#常用命令"><span class="nav-number">4.</span> <span class="nav-text">常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建新博文"><span class="nav-number">4.1.</span> <span class="nav-text">创建新博文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启动服务"><span class="nav-number">4.2.</span> <span class="nav-text">启动服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编译生成静态文件"><span class="nav-number">4.3.</span> <span class="nav-text">编译生成静态文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署"><span class="nav-number">4.4.</span> <span class="nav-text">部署</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Sayings"><span class="nav-number">5.</span> <span class="nav-text">Sayings</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装Hexo"><span class="nav-number">2.</span> <span class="nav-text">安装Hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装NexT"><span class="nav-number">3.</span> <span class="nav-text">安装NexT</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#设置代码高亮主题"><span class="nav-number">3.1.</span> <span class="nav-text">设置代码高亮主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开启打赏功能"><span class="nav-number">3.2.</span> <span class="nav-text">开启打赏功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#订阅微信公众号"><span class="nav-number">3.3.</span> <span class="nav-text">订阅微信公众号</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#常用命令"><span class="nav-number">4.</span> <span class="nav-text">常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建新博文"><span class="nav-number">4.1.</span> <span class="nav-text">创建新博文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启动服务"><span class="nav-number">4.2.</span> <span class="nav-text">启动服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编译生成静态文件"><span class="nav-number">4.3.</span> <span class="nav-text">编译生成静态文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署"><span class="nav-number">4.4.</span> <span class="nav-text">部署</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#部署到Github"><span class="nav-number">5.</span> <span class="nav-text">部署到Github</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Sayings"><span class="nav-number">6.</span> <span class="nav-text">Sayings</span></a></li></ol></div>
             
 
           </div>
