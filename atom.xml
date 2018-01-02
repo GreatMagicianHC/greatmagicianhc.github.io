@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-05-23T02:31:06.000Z</updated>
+  <updated>2017-05-28T08:22:47.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>你知道容器和镜像吗</title>
+    <link href="http://yoursite.com/%E6%8A%80%E6%9C%AF%E6%91%98%E8%A6%81/%E4%BD%A0%E7%9F%A5%E9%81%93%E5%AE%B9%E5%99%A8%E5%92%8C%E9%95%9C%E5%83%8F%E5%90%97.html"/>
+    <id>http://yoursite.com/技术摘要/你知道容器和镜像吗.html</id>
+    <published>2017-05-20T04:35:21.000Z</published>
+    <updated>2017-05-28T08:22:47.000Z</updated>
+    
+    <summary type="html">
+    
+      本文主要介绍容器(Containers)、镜像(Images)的区别和Docker每个命令后面的技术细节，能够很好的帮助读者深入理解Docker。
+    
+    </summary>
+    
+      <category term="技术摘要" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF%E6%91%98%E8%A6%81/"/>
+    
+    
+      <category term="Docker" scheme="http://yoursite.com/tags/Docker/"/>
+    
+      <category term="Containers" scheme="http://yoursite.com/tags/Containers/"/>
+    
+      <category term="Images" scheme="http://yoursite.com/tags/Images/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何发布模块到NPM</title>
     <link href="http://yoursite.com/%E6%8A%80%E6%9C%AF%E6%91%98%E8%A6%81/%E5%A6%82%E4%BD%95%E5%8F%91%E5%B8%83%E6%A8%A1%E5%9D%97%E5%88%B0NPM.html"/>
     <id>http://yoursite.com/技术摘要/如何发布模块到NPM.html</id>
     <published>2016-12-24T13:15:49.000Z</published>
-    <updated>2017-05-23T02:31:06.000Z</updated>
+    <updated>2017-09-07T13:46:18.000Z</updated>
     
     <summary type="html">
     
@@ -86,7 +110,7 @@
     <link href="http://yoursite.com/%E6%8A%80%E6%9C%AF%E6%91%98%E8%A6%81/hexo-next%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2.html"/>
     <id>http://yoursite.com/技术摘要/hexo-next搭建博客.html</id>
     <published>2016-10-12T06:18:43.000Z</published>
-    <updated>2017-05-20T07:21:35.000Z</updated>
+    <updated>2018-01-02T03:43:24.000Z</updated>
     
     <summary type="html">
     
